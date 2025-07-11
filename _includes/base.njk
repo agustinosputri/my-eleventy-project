@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Project</title>
+  <title>{{ title }}</title>
   <link href="/css/style.css" rel="stylesheet">
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="putriagustinos">
-  <meta name="description" content="11ty.Projects">
-  <link rel="icon" href="https://storiesandstitches.netlify.app/images/meta/yarn.svg" type="image/svg+xml" />
+  <meta name="author" content="{{ site.authorName }}">
+  <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="{{ site.favicon }}" type="image/svg+xml" />
   ...
 </head>
 
 </head>
 <body>
-  <h1>My Project</h1>
-  <h1>Hello</h1>
-<p>This is the landing page</p>
-
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
 </body>
 </html>
